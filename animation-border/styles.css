@@ -1,0 +1,60 @@
+body{
+    background-color: #333;
+}
+.box{
+    width: 300px;
+    height: 400px;
+    background-color: #555;
+    overflow: hidden;
+}
+.box div:nth-child(1){
+    height: 5px;
+    width: 300px;
+    background-color: green;
+    animation: anim-1 2s ease-in; 
+}
+.box div:nth-child(2){
+    height: 400px;
+    width: 5px;
+    background-color: green;
+    transform: translateY(-405px) translatex(295px);
+    animation: anim-2 2s ease-in;
+    animation-delay: 2s;
+    animation-fill-mode: forwards; 
+     
+}
+.box div:nth-child(3){
+    height: 5px;
+    width: 295px;
+    background-color: green;
+    transform: translateY(-10px) translatex(300px);
+    animation: anim-3 2s ease-in;
+    animation-delay: 4s;
+    animation-fill-mode: forwards; 
+}
+.box div:nth-child(4){
+    height: 400px;
+    width: 5px;
+    background-color: green;
+    animation: anim-4 2s ease-in;
+    transform: translateY(405px);
+    animation-delay: 6s;
+    animation-fill-mode: forwards; 
+} 
+
+@keyframes anim-1{
+    from{transform: translateX(-300px)}
+    to{transform: translateX(0)}
+}
+@keyframes anim-2{
+    from{transform: translateY(-400px) translatex(295px)}
+    to{transform: translateY(-5px) translatex(295px)}
+}
+@keyframes anim-3{
+    from{transform: translateY(-10px) translatex(300px)}
+    to{transform: translateY(-10px);}
+}
+@keyframes anim-4{
+    from{transform: translateY(5px);}
+    to{transform: translateY(-405px) translateY(-5px);}
+}

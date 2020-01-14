@@ -1,0 +1,35 @@
+
+
+.toggle span::before{
+    content: "ON";
+    display: none;
+}
+.toggle span{
+background-color: #333;
+padding: 4px;
+border-radius: 40px;
+color: #888;
+}
+.toggle span::after{
+    content: "OFF";
+}
+.toggle input:checked+span::after{
+    display: none;
+}
+.toggle input:checked+span::before{
+    display: inline;
+    color:white;
+}
+.fa-check-circle{
+    display: none;
+}
+.toggle input:checked+span .fa-check-circle{
+    display: inline;
+    color:white;
+}
+.toggle input:checked+span .fa-times-circle{
+    display: none;
+}
+.toggle input{
+    display: none;
+}
